@@ -43,7 +43,14 @@
     </v-navigation-drawer>
 
     <v-app-bar app elevation="1">
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+
+      
+           
        <v-spacer> </v-spacer>
+       <v-btn flat color="#EF6C00">
+       <span class="white--text">Sign Out</span>
+       </v-btn>
     </v-app-bar>
 
     <v-main class="blue-grey lighten-4">
