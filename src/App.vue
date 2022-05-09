@@ -52,9 +52,6 @@
       return {
         drawer:false,
         items:[
-          { title: 'Login', icon: 'mdi-account', path: '/login' },
-          { title: 'Register', icon: 'mdi-cog',path:'/register'},
-         
         ]
       }
   }
