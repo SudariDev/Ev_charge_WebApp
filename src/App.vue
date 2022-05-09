@@ -4,9 +4,19 @@
       v-model="drawer"
       app
       dark
+      class="#263238"
     >
         <div class="text-center mt-5">
            <h1 class="white--text">ev.ceb.lk</h1>
+           <v-divider color="white" class="mt-4"></v-divider>
+            <v-avatar class="my-5" size="60">
+            <v-img src="https://cdn.vuetifyjs.com/images/lists/1.jpg" class="image"></v-img>
+            </v-avatar>
+            <h1 class="white--text">Alison Burgas</h1>
+            <h6 class="grey--text ">admin@admin.com</h6>
+           
+     
+              
         </div>
 
     
@@ -49,6 +59,12 @@
       return {
         drawer:false,
         items:[
+          { title: 'Dashboard', icon: 'mdi-view-dashboard',path:"/Dashboard" },
+          { title: 'charge', icon: 'mdi-ev-plug-chademo',path:'/charge'},
+          { title: 'Profile', icon: 'mdi-account' ,path:"/Profile"},
+          { title: 'Payment', icon: 'mdi-credit-card-outline' ,path:"/Payment"},
+          { title: 'Notification', icon: 'mdi-bell' ,path:"/Notification"},
+          
         ]
       }
   }
