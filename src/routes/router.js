@@ -20,6 +20,36 @@ export default new Router({
       component: Dashboard,
       props: {}
     },
+
+    {
+      path: '/charge',
+      name: 'charge',
+      component: charge,
+      props: {}
+    },
+
+    {
+      path: '/chargeStop',
+      name: 'chargeStop',
+      component: chargeStop,
+      props: {}
+    },
+
+    {
+      path: '/Profile',
+      name: 'Profile',
+      component: Profile,
+      props: {}
+    },
+
+    {
+      path: '/Payment',
+      name: 'Payment',
+      component: Payment,
+      props: {}
+    },
+
+
     {
       path: '/login',
       name: 'login',
@@ -36,6 +66,13 @@ export default new Router({
       path: '/register',
       name: 'register',
       component: register,
+     
+    },
+
+    {
+      path: '/navbar',
+      name: 'navbar',
+      component: navbar,
      
     },
 
