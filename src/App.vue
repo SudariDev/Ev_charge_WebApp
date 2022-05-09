@@ -4,11 +4,9 @@
       v-model="drawer"
       app
       dark
-      color="#263238"
     >
         <div class="text-center mt-5">
            <h1 class="white--text">ev.ceb.lk</h1>
-           <v-divider color="white" class="mt-4"></v-divider>   
         </div>
 
     
@@ -35,7 +33,6 @@
     </v-navigation-drawer>
 
     <v-app-bar app elevation="1">
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>      
        <v-spacer> </v-spacer>
     </v-app-bar>
 
