@@ -4,11 +4,16 @@ import Dashboard from '../View/Dashboard.vue'
 import charge from '../View/charge.vue'
 import chargeStop from '../View/chargeStop.vue'
 import Profile from '../View/Profile.vue'
+import Map from '../View/GoogleMaps.vue'
 import Payment from '../View/Payment.vue'
+import Reports from '../View/Reports.vue'
+
+
+
 import forgotpassword from '../View/ForgotPassword.vue'
 import login from '../View/Login.vue'
 import register from '../View/Register.vue'
-import navbar from '../View/Navbar.vue'
+
 
 Vue.use(Router)
 
@@ -42,10 +47,26 @@ export default new Router({
       props: {}
     },
 
+
+    {
+      path: '/Map',
+      name: 'Map',
+      component: Map,
+      props: {}
+    },
+
+
     {
       path: '/Payment',
       name: 'Payment',
       component: Payment,
+      props: {}
+    },
+    
+    {
+      path: '/Reports',
+      name: 'Reports',
+      component: Reports,
       props: {}
     },
 
@@ -69,13 +90,7 @@ export default new Router({
      
     },
 
-    {
-      path: '/navbar',
-      name: 'navbar',
-      component: navbar,
-     
-    },
-
+ 
 
 
     
