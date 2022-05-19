@@ -69,12 +69,17 @@
           { title: 'Dashboard', icon: 'mdi-view-dashboard',path:"/Dashboard" },
           { title: 'charge', icon: 'mdi-ev-plug-chademo',path:'/charge'},
           { title: 'Profile', icon: 'mdi-account' ,path:"/Profile"},
+          { title: 'Map', icon: 'mdi-map-marker' ,path:"/Map"},
           { title: 'Payment', icon: 'mdi-credit-card-outline' ,path:"/Payment"},
+          { title: "Reports", icon: "mdi-chart-areaspline",path:'/reports' },
           { title: 'Notification', icon: 'mdi-bell' ,path:"/Notification"},
           
         ]
       }
+
+
   }
-   
+
+  
   }
 </script>
