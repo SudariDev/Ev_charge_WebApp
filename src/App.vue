@@ -13,14 +13,8 @@
             <v-img src="https://cdn.vuetifyjs.com/images/lists/1.jpg" class="image"></v-img>
             </v-avatar>
             <h1 class="white--text">Alison Burgas</h1>
-            <h6 class="grey--text ">admin@admin.com</h6>
-           
-     
-              
+            <h6 class="grey--text ">admin@admin.com</h6>     
         </div>
-
-    
-
       <v-list
         dense
         nav
@@ -44,13 +38,9 @@
 
     <v-app-bar app elevation="1">
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-
       
-           
-       <v-spacer> </v-spacer>
-       <v-btn flat color="#EF6C00">
-       <span class="white--text">Sign Out</span>
-       </v-btn>
+      <v-spacer> </v-spacer>
+      
     </v-app-bar>
 
     <v-main class="blue-grey lighten-4">
@@ -71,8 +61,9 @@
           { title: 'Profile', icon: 'mdi-account' ,path:"/Profile"},
           { title: 'Map', icon: 'mdi-map-marker' ,path:"/Map"},
           { title: 'Payment', icon: 'mdi-credit-card-outline' ,path:"/Payment"},
-          { title: "Reports", icon: "mdi-chart-areaspline",path:'/reports' },
+          { title: "Reports", icon: "mdi-chart-areaspline",path:'/Report' },
           { title: 'Notification', icon: 'mdi-bell' ,path:"/Notification"},
+          { title: 'Home',path:"/Home"},
           
         ]
       }
