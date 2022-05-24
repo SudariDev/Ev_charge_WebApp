@@ -6,7 +6,8 @@ import chargeStop from '../View/chargeStop.vue'
 import Profile from '../View/Profile.vue'
 import Map from '../View/GoogleMaps.vue'
 import Payment from '../View/Payment.vue'
-import Reports from '../View/Reports.vue'
+import Report from '../View/Report/ReportView.vue'
+import Home from '../View/Home.vue'
 
 
 
@@ -64,12 +65,11 @@ export default new Router({
     },
     
     {
-      path: '/Reports',
-      name: 'Reports',
-      component: Reports,
+      path: '/Report',
+      name: 'Report',
+      component: Report,
       props: {}
     },
-
 
     {
       path: '/login',
@@ -87,6 +87,13 @@ export default new Router({
       path: '/register',
       name: 'register',
       component: register,
+     
+    },
+
+    {
+      path: '/Home',
+      name: 'Home',
+      component: Home,
      
     },
 
