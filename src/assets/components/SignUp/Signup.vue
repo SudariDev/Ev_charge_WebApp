@@ -3,16 +3,19 @@
     <v-row align="center" justify="center" dense>
       <v-col cols="12" sm="10" lg="10">
         <v-card class="elevation-12 mx-auto my-12" max-width="550">
-          <v-layout align-center>
-            <v-flex xs6 class="hidden-sm-and-down">
-              <v-img
+
+               <v-card-actions>
+            <v-row justify="center" align="center">
+              <v-col align="center">
+                 <v-img
                 max-width="300"
                 max-height="300"
                 src="../../imges/EvchargeB.png"
                 class="grey darken-4"
               ></v-img>
-            </v-flex>
-          </v-layout>
+              </v-col>
+            </v-row>
+          </v-card-actions>
 
           <v-card-text>
             <v-container fluid>
@@ -102,7 +105,7 @@
           <v-card-actions>
             <v-row justify="center" align="center">
               <v-col align="center">
-                <v-btn class="rounded-0" color="success" dark>
+                <v-btn class="rounded-0" color="success" dark to="/Login">
                   REGISTER
                 </v-btn>
                 <br />
