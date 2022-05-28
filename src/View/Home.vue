@@ -260,7 +260,7 @@
         
         </v-container>
 
-        <v-container>
+        <v-container fluid>
           <div class="mb-3 sub-header-basic"></div>
 
           <v-container fluid>
@@ -296,7 +296,7 @@
                 </v-card>
               </v-col>
 
-              <v-col cols="12" sm="4">
+               <v-col cols="12" sm="4">
                 <v-card
                   :loading="loading"
                   class="mx-auto my-12"
@@ -308,9 +308,9 @@
                     v-bind:src="require('../assets/imges/Charging1.jpg')"
                   ></v-img>
 
-                  <v-card-title style="color:#2DAF00"
+                  <v-card-title style="color:#2DAF00 "
                     ><h4 class="font-weight-bold">
-                      Charging Solution for Electric Car & Hybrid Car
+                     Charging Solution for Electrical Car and Hybrid Car
                     </h4></v-card-title
                   >
 
@@ -382,7 +382,7 @@
             class="#4caf50 lighten-2 py-4 text-center white--text"
             cols="12"
           >
-            {{ new Date().getFullYear() }} — <strong>EV_Charge.lk</strong>
+            {{ new Date().getFullYear() }} — <strong>ev.ceb.lk</strong>
           </v-col>
         </v-row>
       </v-footer>
