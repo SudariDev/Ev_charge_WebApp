@@ -1,11 +1,7 @@
 <template>
   <v-container>
      <div class="mb-3 sub-header-basic">
-          <!-- <v-chip style="width: 60%" color="#FFFFFF"> <v-chip color="primary" style="width: 1500%">Step 1: Payment</v-chip> 
-          </v-chip> -->
         </div>
-
-
       <v-container>
         <v-row>
           <v-col cols="12" sm="6">
@@ -18,9 +14,10 @@
    
        </template>
 
-    <v-card-title  style="color:blue">Payment Details</v-card-title>
+      <v-card-title  style="color:blue">Payment Details</v-card-title>
 
-    <v-divider class="mx-4"></v-divider>
+      <v-divider class="mx-4"></v-divider>
+
 
      <v-card-text>
       <v-container fluid>
@@ -120,7 +117,7 @@
 
    
     <v-card-actions>
-      <v-btn class="rounded-0" color="primary" x-large block dark >NEXT</v-btn>
+      <v-btn class="rounded-0" color="success" x-large block dark >NEXT</v-btn>
     </v-card-actions>
          </v-card>
          </v-col>
