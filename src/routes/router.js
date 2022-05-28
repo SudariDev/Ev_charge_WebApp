@@ -6,14 +6,15 @@ import chargeStop from '../View/chargeStop.vue'
 import Profile from '../View/Profile.vue'
 import Map from '../View/GoogleMaps.vue'
 import Payment from '../View/Payment.vue'
-import Report from '../View/Report/ReportView.vue'
-import Home from '../View/Home.vue'
+import Reports from '../View/ReportView.vue'
 
-
+import sideBarsection from '../assets/components/SideBarSection/SideBarSection.vue'
+import TopBar from '../assets/components/ToolBar/TopBar.vue'
 
 import forgotpassword from '../View/ForgotPassword.vue'
-import login from '../View/Login.vue'
-import register from '../View/Register.vue'
+import login from '../assets/components/Login/Login.vue'
+import register from '../assets/components/SignUp/Signup.vue'
+import  home from  '../View/Home.vue'
 
 
 Vue.use(Router)
@@ -65,16 +66,24 @@ export default new Router({
     },
     
     {
-      path: '/Report',
-      name: 'Report',
-      component: Report,
+      path: '/Reports',
+      name: 'Reports',
+      component: Reports,
       props: {}
     },
+
 
     {
       path: '/login',
       name: 'login',
       component: login,
+     
+    },
+
+    {
+      path: '/register',
+      name: 'register',
+      component: register,
      
     },
     {
@@ -84,18 +93,23 @@ export default new Router({
      
     },
     {
-      path: '/register',
-      name: 'register',
-      component: register,
+      path: '/sideBarsection',
+      name: 'sideBarsection',
+      component: sideBarsection,
      
     },
-
     {
-      path: '/Home',
-      name: 'Home',
-      component: Home,
+      path: '/TopBar',
+      name: 'TopBar',
+      component: TopBar,
      
     },
+    {
+      path: '/',
+      name: 'home',
+      component: home
+     
+    }
 
  
 
