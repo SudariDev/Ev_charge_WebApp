@@ -36,6 +36,9 @@ export default{
            if(this.$route.name == 'home'){
               return  false;
            }
+           else if(this.$route.name == 'register'){
+              return  false;
+           }
             else if(this.$route.name == 'login'){
               return false;
            }
