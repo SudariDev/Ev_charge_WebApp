@@ -6,8 +6,14 @@
           <v-card-actions>
             <v-row justify="center" align="center">
               <v-col align="center">
+                 <v-img
+                max-width="300"
+                max-height="300"
+                src="../../imges/EvchargeB.png"
+                class="grey darken-4"
+              ></v-img>
                 <v-card-subtitle>
-                  <h1>Welcome to Login!</h1>
+                  <h1>Login!</h1>
                 </v-card-subtitle>
               </v-col>
             </v-row>
@@ -69,7 +75,7 @@
           <v-card-actions>
             <v-row justify="center" align="center">
               <v-col align="center">
-                <v-btn rounded color="#00BFA5" dark>
+                <v-btn rounded color="#020F6E" dark to="/">
                   Back to Home
                 </v-btn>
                 <br />
