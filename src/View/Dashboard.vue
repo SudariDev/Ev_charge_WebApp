@@ -1,206 +1,126 @@
 <template>
   <v-container>
-    <h2>Dashboard</h2>
-    <v-row>
+    <div class="dashboard">
+      <v-subheader class="py-0 d-flex justify-space-between rounded-lg">
+        <h3>Dashboard</h3>
+        <v-btn color="success">
+          View Orders
+        </v-btn>
+      </v-subheader>
+      <br />
+      <v-row>
+        <v-col lg="7" cols="12">
+          <v-alert dense text type="success">
+            Login Successfully! Welcome to <strong>Alison Burgas</strong>
+          </v-alert>
+          <v-row>
+            <v-col
+              lg="6"
+              cols="12"
+              v-for="(item, index) in activityLog"
+              :key="index"
+            >
+              <v-card elevation="2" class="rounded-lg">
+                <v-card-text class="d-flex justify-space-between align-center">
+                  <div>
+                    <strong>{{ item.title }}</strong> <br />
+                    <span>Last 3 weeks</span>
+                  </div>
+                  <v-icon color="info" size="50">{{ item.icon }}</v-icon>
+                </v-card-text>
+                <v-card-actions class="d-flex justify-space-between">
+                </v-card-actions>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-col>
+        <v-col cols="12" lg="5">
+          <v-card>
+            <v-card-title>Activities</v-card-title>
+            <v-card-text class="py-0">
+              <v-timeline align-top dense>
+                <v-timeline-item color="indigo" small>
+                  <strong>5 Minuts ago</strong>
+                  <div class="text-caption">
+                    You have new order please check this out
+                  </div>
+                </v-timeline-item>
+                <v-timeline-item color="green" small>
+                  <strong>35 Minuts ago</strong>
+                  <div class="text-caption mb-2">
+                    A Product has delivered!
+                  </div>
+                </v-timeline-item>
 
-      <v-col
-        cols="12"
-        sm="6"
-        lg="3"
-      >
-        <StatCardView
-          color="info"
-          icon="mdi-battery-charging"
-          title="Charge"
-          value="+245"
-          sub-icon="mdi-clock"
-          sub-text="Just Updated"
-        />
-      </v-col>
-      
-      <v-col
-        cols="12"
-        sm="6"
-        lg="3"
-      >
-        <StatCardView
-             color="primary"
-             icon="mdi-history"
-             title="History"
-             value="75.521"
-             sub-icon="mdi-tag"
-             sub-text="Tracked from Google Analytics"
-        />
-      </v-col>
+                <v-timeline-item color="indigo" small>
+                  <strong>44 Minuts ago</strong>
+                  <div class="text-caption">
+                    You have new order please check this out
+                  </div>
+                </v-timeline-item>
+              </v-timeline>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
 
-      <v-col
-        cols="12"
-        sm="6"
-        lg="3"
-      >
-        <StatCardView
-           color="success"
-           icon="mdi-credit-card-outline"
-           title="Top-up"
-           value="$ 34,245"
-           sub-icon="mdi-calendar"
-           sub-text="Last 24 Hours"
-        />
-      </v-col>
-
-      
-      <v-col
-        cols="12"
-        sm="6"
-        lg="3"
-      >
-         
-        <StatCardView
-          color="orange"
-          icon="mdi-exit-to-app"
-          title="Exit"
-          value="184"
-          sub-icon="mdi-alert"
-          sub-icon-color="red"
-          sub-text="Get More Space..."
-        />
-      </v-col>
-    </v-row>
-
-   <v-row>
+      <v-row>
         <v-col cols="12" sm="6">
           <v-card>
             <v-app-bar flat color="rgba(0,0,0,0)">
               <v-toolbar-title class="title black--text pl-0 ml-2">
-                Impression 
+                Impression
               </v-toolbar-title>
               <v-spacer></v-spacer>
               <v-btn color="deep-purple" class="white--text mr-2">Weekly</v-btn>
-              <v-btn color="deep-purple lighten-4" class="deep-purple--text ">Monthly</v-btn>
+              <v-btn color="deep-purple lighten-4" class="deep-purple--text "
+                >Monthly</v-btn
+              >
             </v-app-bar>
             <v-sparkline
-            :fill="fill"
-            :line-width="width"
-            :padding="padding"
-            :smooth="radius || false"
-            :value="value"
-            auto-draw
-            color="deep-purple"></v-sparkline>
+              :fill="fill"
+              :line-width="width"
+              :padding="padding"
+              :smooth="radius || false"
+              :value="value"
+              auto-draw
+              color="deep-purple"
+            ></v-sparkline>
           </v-card>
         </v-col>
 
-        
         <v-col cols="12" sm="6">
-         <v-card
-          class="mx-auto"
-          max-width="600"
-          title
-  >
-    <v-list-item>
-      <v-list-item-content>
-          <v-list-item-content class="title black--text pl-0 ml-2">Availability-Following Chargers are online now</v-list-item-content>
-      </v-list-item-content>
-    </v-list-item>
+          <v-card class="mx-auto" max-width="600" title>
+            <v-list-item>
+              <v-list-item-content>
+                 <v-card-title style="color: success"
+                    ><h4>
+                     Available-Following Charging are online  now
+                    </h4></v-card-title
+                  >
+              </v-list-item-content>
+            </v-list-item>
 
-    <v-list-item three-line>
-      <v-list-item-content>
-        <v-list-item-title>Awissawella</v-list-item-title>
-        <v-list-item-title>Dambulla</v-list-item-title>
-        <v-list-item-title>Anuradhapura</v-list-item-title>
-        <v-list-item-title>Nuwaraeliya</v-list-item-title>
-        <v-list-item-title>Kandy</v-list-item-title>
-        <v-list-item-title>Pannipitiya</v-list-item-title>
-      </v-list-item-content>
-    </v-list-item>
-  </v-card>
-        </v-col>
-
-
-
-        <v-col cols="12" sm="6">
-          <v-card height="180px">
-            <v-row>
-              <v-col cols="12" sm="4">
-                <v-list-item three-line>
-                  <v-list-item-content>
-                    <v-list-item-subtitle class="grey--text">Average daily load curve in summer</v-list-item-subtitle>
-                    <v-list-item-subtitle class="grey--text">as of 25 May 2022 9.41 am</v-list-item-subtitle>
-                  </v-list-item-content>
-                </v-list-item>
-              </v-col>
-              <v-col cols="12" sm="8">
-                <v-sparkline
-                :value="value"
-                :smooth="radius || false"
-                :padding="padding"
-                :line-width="width"
-                :stroke-linecap="lineCap"
-                :fill="fills"
-                :type="type"
-                :auto-line-width="autoLineWidth"
-                auto-draw
-                color="red"
-                >
-
-                </v-sparkline>
-                <v-card-actions class="justify-end">
-                  <v-btn text color="green">
-                    <v-icon class="mt-n2 pr-2">fas fa-sort-down</v-icon> 8.5
-                  </v-btn>
-                </v-card-actions>
-              </v-col>
-            </v-row>
+            <v-list-item three-line>
+              <v-list-item-content>
+                <ul>
+                  <li>Awissawella</li>
+                  <li>Dambulla</li>
+                  <li>Anuradhapura</li>
+                  <li>Nuwaraeliya</li>
+                  <li>Kandy</li>
+                  <li>Pannipitiya</li>
+                </ul>
+              </v-list-item-content>
+            </v-list-item>
           </v-card>
         </v-col>
-        <v-col cols="12" sm="6">
-          <v-card>
-            <v-row>
-              <v-col cols="12" sm="6" class="border">
-                <v-list-item three-line>
-                  <v-list-item-content>
-                    <v-list-item-subtitle class="grey--text">EV charging load</v-list-item-subtitle>
-                    <v-row>
-                      <v-col cols="12" sm="6">
-                        <v-progress-circular
-                        rotate="360"
-                        size="100"
-                        width="15"
-                        value="70"
-                        color="teal"
-                        >
-                        70%
-                        </v-progress-circular>
-                      </v-col>
-                      <v-col cols="12" sm="6">
-                        <v-list-item-subtitle class="grey--text mt-8">150</v-list-item-subtitle>
-                        <v-list-item-subtitle class="grey--text">250</v-list-item-subtitle>
-                      </v-col>
-                    </v-row>
-                  </v-list-item-content>
-                </v-list-item>
-              </v-col>
-              <v-sol cols="12" sm="6" align="center">
-                <v-list-item two-line class="mt-10">
-                  <v-list-item-content>
-                     <v-list-item-title class="headline mb-1 black--text">
-                    1500
-                  </v-list-item-title>
-                  <v-list-item-subtitle class="grey--text">CHARGER</v-list-item-subtitle>
-                  </v-list-item-content>
-                 
-                </v-list-item>
-              </v-sol>
-            </v-row>
-          </v-card>
-        </v-col>
-      </v-row>  
-
-
-   
+      </v-row>
+    </div>
   </v-container>
 </template>
+
 <script>
-import StatCardView from "../../src/assets/components/CardView/StatCard.vue";
 const gradients = [
   ["#222"],
   ["#42b3f4"],
@@ -209,29 +129,53 @@ const gradients = [
   ["#00c6ff", "#F0F", "#FF0"],
   ["#f72047", "#ffd200", "#1feaea"],
 ];
+
 export default {
-  data: () => ({
-    color: "#00897",
-    width: 2,
-    radius: 10,
-    padding: 8,
-    lineCap: "round",
-    gradient: gradients[5],
-    value: [0, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 9, 0],
-    gradientDirection: "top",
-    gradients,
-    fill: false,
-    type: "trend",
-    autoLineWidth: false,
-    selected: [2],
-    
-  }),
-  components: {
-    StatCardView,
+  name: "Dashboard",
+  data: () => {
+    return {
+      color: "#00897",
+      width: 2,
+      radius: 10,
+      padding: 8,
+      lineCap: "round",
+      gradient: gradients[5],
+      value: [0, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 9, 0],
+      gradientDirection: "top",
+      gradients,
+      fill: false,
+      type: "trend",
+      autoLineWidth: false,
+      selected: [2],
+
+      activityLog: [
+        {
+          title: "Charge",
+          icon: "mdi-battery-charging",
+          color: "cyan lighten-3",
+        },
+        { title: "History", icon: "mdi-history", color: "green darken-2" },
+        {
+          title: "Top-up",
+          icon: "mdi-credit-card-outline",
+          color: "blue-grey darken-1",
+        },
+        {
+          title: "Exit",
+          icon: "mdi-exit-to-app",
+          color: "deep-orange darken-1",
+        },
+      ],
+    };
   },
 };
 </script>
 
-
-<style>
+<style scoped>
+.overlap-icon {
+  position: absolute;
+  top: -33px;
+  text-align: center;
+  padding-top: 12px;
+}
 </style>
