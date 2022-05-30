@@ -3,9 +3,6 @@
     <div class="dashboard">
       <v-subheader class="py-0 d-flex justify-space-between rounded-lg">
         <h3>Dashboard</h3>
-        <v-btn color="success">
-          View Orders
-        </v-btn>
       </v-subheader>
       <br />
       <v-row>
