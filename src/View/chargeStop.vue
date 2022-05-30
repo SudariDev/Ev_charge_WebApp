@@ -79,7 +79,7 @@
 <v-container class="d-flex justify-center mb-6">
     <div class="d-flex justify-center mb-6">
             <v-btn
-              color="error"
+              color="success"
               dark
               large
             >
