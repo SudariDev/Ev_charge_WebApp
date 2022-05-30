@@ -75,7 +75,7 @@
           <v-card-actions>
             <v-row justify="center" align="center">
               <v-col align="center">
-                <v-btn rounded color="#020F6E" dark to="/">
+                <v-btn rounded color="#262626" dark to="/">
                   Back to Home
                 </v-btn>
                 <br />
