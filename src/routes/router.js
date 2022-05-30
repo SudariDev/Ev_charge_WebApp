@@ -17,6 +17,8 @@ import register from '../assets/components/SignUp/Signup.vue'
 import  home from  '../View/Home.vue'
 
 
+
+
 Vue.use(Router)
 
 export default new Router({
@@ -104,6 +106,7 @@ export default new Router({
       component: TopBar,
      
     },
+
     {
       path: '/',
       name: 'home',
