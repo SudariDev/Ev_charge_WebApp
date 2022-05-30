@@ -96,7 +96,7 @@
             >
               start
             </v-btn> -->
-              <v-btn color="error" dark large to='/chargeStop'>START CHARGING</v-btn>
+              <v-btn color="success" dark large to='/chargeStop'>START CHARGING</v-btn>
               <!-- <v-btn class="rounded-0" color="#EF6C00" x-large block dark to='/Dashboard'>Login</v-btn> -->
           </div>
 </v-container>
