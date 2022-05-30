@@ -92,7 +92,7 @@ export default {
         { title: "Profile", icon: "mdi-account" },
         { title: "Change Password", icon: "mdi-key" },
         { title: "Setting", icon: "mdi-cog" },
-        { title: "Logout", icon: "mdi-logout" },
+        { title: "Logout", icon: "mdi-logout"},
       ],
       items: [
         {
