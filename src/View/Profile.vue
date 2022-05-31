@@ -130,7 +130,7 @@
             <v-card :loading="loading" class="mx-auto my-6" max-width="500">
               <template slot="progress"> </template>
               <v-container fluid>
-                <v-img height="175px" src="../assets/imges/Charge_profile2.jpg">
+                <v-img height="175px" src="../assets/imges/Profile_service.jpg">
                   <v-app-bar flat color="rgba(0, 0, 0, 0)">
                     <v-btn color="white" icon>
                       <v-icon>mdi-dots-vertical</v-icon>
