@@ -40,10 +40,22 @@
                     <v-row>
                       <v-col cols="3"> </v-col>
                       <v-col cols="3">
-                        <v-btn normal color="success" style="color: white" to="/login">LogIn</v-btn>
+                        <v-btn
+                          normal
+                          color="success"
+                          style="color: white"
+                          to="/login"
+                          >LogIn</v-btn
+                        >
                       </v-col>
                       <v-col cols="3">
-                        <v-btn normal color="success" style="color: white" to="/register">SignUp</v-btn>
+                        <v-btn
+                          normal
+                          color="success"
+                          style="color: white"
+                          to="/register"
+                          >SignUp</v-btn
+                        >
                       </v-col>
                       <v-col cols="3"> </v-col>
                     </v-row>
@@ -96,7 +108,9 @@
               color="#2DAF00"
             >
               <v-card-title
-                ><v-span style="color: white">Charging Station</v-span></v-card-title
+                ><v-span style="color: white"
+                  >Charging Station</v-span
+                ></v-card-title
               >
               <v-card-subtitle
                 ><v-span style="color: white"
@@ -114,7 +128,9 @@
               color="#2DAF00"
             >
               <v-card-title
-                ><v-span style="color: white">Batery maintenance</v-span></v-card-title
+                ><v-span style="color: white"
+                  >Batery maintenance</v-span
+                ></v-card-title
               >
               <v-card-subtitle
                 ><v-span style="color: white"
@@ -149,14 +165,19 @@
                 <v-card elevation="0">
                   <card-subtitle>
                     <h1>Traveling without demanding our planet</h1>
-                  
-
                   </card-subtitle>
                   <v-card-subtitle
-                    ><h2 style="color:#2DAF00 ">We are the best on the town</h2></v-card-subtitle
+                    ><h2 style="color:#2DAF00 ">
+                      We are the best on the town
+                    </h2></v-card-subtitle
                   >
                   <v-card-text>
-                    Vivamus vel ultricies quam. Suspendisse tempus erat ac massa pharetra, sit amet euismod justo iaculis. Quisque ultrices euismod dui, sed aliquet odio eleifend at. In ac libero vel nisi auctor vehicula. Pellentesque facilisis sem eros, nec iaculis libero consectetur in Duis varius libero sit amet dolor eleifend.
+                    Vivamus vel ultricies quam. Suspendisse tempus erat ac massa
+                    pharetra, sit amet euismod justo iaculis. Quisque ultrices
+                    euismod dui, sed aliquet odio eleifend at. In ac libero vel
+                    nisi auctor vehicula. Pellentesque facilisis sem eros, nec
+                    iaculis libero consectetur in Duis varius libero sit amet
+                    dolor eleifend.
                   </v-card-text>
                 </v-card>
               </v-col>
@@ -179,7 +200,12 @@
                     <br />
                     <h1>for our planet</h1>
                     <br /><br />
-                    <v-card-text style="color:#212121">We are passionate about accelerating the transition to low-carbon, zero-emission transport, providing EV charger at home and specialist electric vehicle solutions to achieve a sustainable future.</v-card-text>
+                    <v-card-text style="color:#212121"
+                      >We are passionate about accelerating the transition to
+                      low-carbon, zero-emission transport, providing EV charger
+                      at home and specialist electric vehicle solutions to
+                      achieve a sustainable future.</v-card-text
+                    >
                   </v-card-title>
                 </v-card>
               </v-col>
@@ -187,15 +213,20 @@
                 <v-card elevation="0">
                   <v-card-title style="color: #212121"
                     ><h4>
-                      EV Charger has a small footprint and is quick to deploy. It is suitable for home and private use, and it can also be used for new energy vehicle 4s shops, workshop debugging, etc.
+                      EV Charger has a small footprint and is quick to deploy.
+                      It is suitable for home and private use, and it can also
+                      be used for new energy vehicle 4s shops, workshop
+                      debugging, etc.
                     </h4></v-card-title
                   >
                   <card-subtitle>
                     <ul>
-                      <li>The best charging station for home and private use</li>
+                      <li>
+                        The best charging station for home and private use
+                      </li>
                       <li>Simple and intelligent</li>
                       <li>Wall-mount or floor-stand installation optional</li>
-                      <li> Type 1 or Type 2 charging cable optional</li>
+                      <li>Type 1 or Type 2 charging cable optional</li>
                     </ul>
                   </card-subtitle>
                 </v-card>
@@ -249,11 +280,9 @@
         <v-container fluid>
           <v-card-title primary-title class="justify-center">
             <div>
-              
               <div><h1>Read our latest article</h1></div>
-            </div> </v-card-title
-          >
-        
+            </div>
+          </v-card-title>
         </v-container>
 
         <v-container fluid>
@@ -292,7 +321,7 @@
                 </v-card>
               </v-col>
 
-               <v-col cols="12" sm="4">
+              <v-col cols="12" sm="4">
                 <v-card
                   :loading="loading"
                   class="mx-auto my-12"
@@ -306,7 +335,7 @@
 
                   <v-card-title style="color:#2DAF00 "
                     ><h4 class="font-weight-bold">
-                     Charging Solution for Electrical Car and Hybrid Car
+                      Charging Solution for Electrical Car and Hybrid Car
                     </h4></v-card-title
                   >
 
