@@ -6,12 +6,6 @@
       src="../../imges/dashBord_img/initial-letter-ev-modern-linked-260nw-444023206.webp"
     >
       <div class="text-center">
-        <!-- <v-avatar class="mb-4" color="grey darken-1" size="64">
-          <v-img
-            aspect-ratio="30"
-            src="../../imges/logo/Logopngwing.com.png"
-          />
-        </v-avatar> -->
         <br ><br ><br><br>
          <h3 style="color: #4caf50" >EV Charge</h3>
       </div>
