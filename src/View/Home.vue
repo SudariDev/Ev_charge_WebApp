@@ -94,7 +94,7 @@
               >
               <v-card-subtitle
                 ><v-span style="color: white"
-                  >tLorem ipsum dolor sit amet, consectetur adipiscing
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing
                   eli.</v-span
                 ></v-card-subtitle
               >
@@ -114,7 +114,7 @@
               >
               <v-card-subtitle
                 ><v-span style="color: white"
-                  >tLorem ipsum dolor sit amet, consectetur adipiscing
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing
                   eli.</v-span
                 ></v-card-subtitle
               >
@@ -134,7 +134,7 @@
               >
               <v-card-subtitle
                 ><v-span style="color: white"
-                  >tLorem ipsum dolor sit amet, consectetur adipiscing
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing
                   eli.</v-span
                 ></v-card-subtitle
               > </v-card
@@ -196,7 +196,7 @@
                   <v-card-title style="color: #2DAF00"
                     ><h1>Our mission to make</h1>
                     <br /><br />
-                    <h1>vehicle more friendly for</h1>
+                    <h1>vehicle more friendly</h1>
                     <br />
                     <h1>for our planet</h1>
                     <br /><br />
@@ -267,9 +267,10 @@
                     pharetra pulvinar leo. Cras condimentum urna scelerisque sem
                     congue dignissim.
                   </v-card-text>
-                  <v-btn normal color="success">
-                    <v-span style="color: white">Map</v-span>
-                  </v-btn>
+
+                  <v-btn normal color="success" style="color: white" to="/Map"
+                    >MAP</v-btn
+                  >
                 </v-card>
               </v-col>
             </v-row>
